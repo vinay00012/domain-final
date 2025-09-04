@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IJEMSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>  .scroll-box {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .scroll-content {
+    position: absolute;
+    animation: scroll-up 10s linear infinite;
+  }
+  @keyframes scroll-up {
+    0% { top: 100%; }
+    100% { top: -100%; }
+  }
+
+  .custom-red {
+  background-color: #ab1a18 !important;
+}
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .journal-title {
+      color: #b71c1c;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.3;
+      text-align: center;
+    }
+    .journal-subtitle {
+      font-size: 15px;
+      color: blue;
+      text-align: center;
+    }
+    .issn-text {
+      font-size: 18px;
+    }
+    .issn-text .issn {
+      color: purple;
+      font-weight: 600;
+    }
+    .navbar-custom {
+      background-color: #b71c1c;
+      color: white;
+    }
+    .navbar-custom .nav-link {
+      color: white !important;
+      font-weight: bold;
+      text-align: center;
+    }
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .text-decoration-none{
+        color: black !important;
+       
+        padding-left: 80px;
+        font-size: 20px;
+    }
+    .text-decoration-none:hover {
+        color: #b71c1c !important;
+    }
+    .card-header{
+        font-size: 25px;
+        padding: 15px;
+        text-align: center;
+    }
+    .boxes{
+        margin-top: 5%;
+    }
+
+    .center-box {
+      text-align: justify;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .font{
+        font-size: 25px;
+    }
+
+
+    @media (max-width: 991.98px) {
+      .nav-wrapper {
+        order: -1; /* Navbar goes to top on small screens */
+      }
+      .issn-text {
+        text-align: center !important;
+        margin-top: 10px;
+      }
+    }
+
+     .text-decoration-none-white{
+color: white !important;
+       
+      
+    }
+    </style>
+
+  <!-- Custom Styling -->
+ 
+</head>
+<body>
+
+<!-- Full Page Container -->
+<div class="container-fluid p-0 d-flex flex-column">
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <div class="nav-wrapper order-lg-1">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Static and Dropdown Menus -->
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ABOUT</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="editorial-vision.html"><strong>EDITOR VISION</strong></a></li>
+                <li><a class="dropdown-item" href="editor-board.html"><strong>EDITORIAL BOARD</strong></a></li>
+
+                <li><a class="dropdown-item" href="terms-and-conditions.html"><strong>TERMS & CONDITIONS</strong></a></li>
+                <li><a class="dropdown-item" href="privacy-policy.html"><strong>PRIVACY & POLICIES</strong></a></li>
+                <li><a class="dropdown-item" href="ethics.html"><strong>PUBLICATION ETHICS</strong></a></li>
+                <li><a class="dropdown-item" href="peer-review-process.html"><strong>PEER REVIEW PROCESS</strong></a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">AUTHOR</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="publication-process.html"><strong>PUBLICATION PROCESS</strong></a></li>
+                <li><a class="dropdown-item" href="submit-paper.html"><strong>SUBMIT PAPER ONLINE</strong></a></li>
+                <li><a class="dropdown-item" href="fee.html"><strong>PAY PUBLICATION FEE</strong></a></li>
+                <li><a class="dropdown-item" href="Track.html"><strong>TRACK PAPER</strong></a></li>
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/1H6kkOrtpOzirpOZS410CdjDh3TPBdZxA/view?usp=drive_link"><strong>COPY RIGHT FORM</strong></a></li>
+                <li><a class="dropdown-item" href="paper-formate.html"><strong>SAMPLE PAPER FORMATE</strong></a></li>
+                <li><a class="dropdown-item" href="topic.html"><strong>TOPIC</strong></a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="indexing.html">INDEXING</a></li>
+            <li class="nav-item"><a class="nav-link" href="fee.html">FEE</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ARCHIEVES</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="current-issue.html"><strong>Current Issue</strong></a></li>
+                <li><a class="dropdown-item" href="past-issues.html"><strong>Past Issues</strong></a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========== HEADER SECTION ========== -->
+  <div class="container py-2">
+    <div class="row align-items-center text-center text-lg-start">
+      <!-- Left: Logo -->
+      <div class="col-lg-2 mb-3 mb-lg-0">
+        <img src="https://res.cloudinary.com/dsnqf3s0s/image/upload/v1723743619/IJEMSS-point-1_lltgft.png" alt="IJEMSS Logo" class="img-fluid" style="max-height: 150px; margin-left: -3%;">
+      </div>
+
+      <!-- Center: Title -->
+      <div class="col-lg-8">
+        <h1 class="journal-title mb-2">
+          INTERNATIONAL JOURNAL OF ENGINEERING MANAGEMENT AND<br>SOCIAL SCIENCES
+        </h1>
+        <div class="journal-subtitle">(An International  Peer-Reviewed Multi-Disciplinary Journal)</div>
+      </div>
+
+      <!-- Right: ISSN -->
+      <div class="col-lg-2 issn-text text-lg-end text-center mt-3 mt-lg-0">
+        <div class="issn">ISSN: </div>
+        <div> www.ijemss.com</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MAIN CONTENT SECTION ========== -->
+<div class="container-fluid mt-4">
+  <div class="row">
+    
+    <!-- LEFT COLUMN (Sidebar Boxes) -->
+    <div class="col-lg-3 mb-4 order-2 order-lg-1">
+      <!-- Image Box -->
+      <div class="card shadow-sm mb-3">
+        <img src="https://res.cloudinary.com/dsnqf3s0s/image/upload/v1723781971/Screenshot_2024-08-15_234236-transformed_l6wugh.png" class="card-img-top" alt="Globe">
+        <div class="card-body text-center">
+          <h4 class="fw-bold">7.8</h4>
+        </div>
+      </div>
+
+      <!-- Authors Box -->
+      <div class="card shadow-sm mb-3 boxes">
+        <div class="card-header text-white fw-bold custom-red">For Authors</div>
+        <div class="card-body">
+          <ul class="list-unstyled">
+            <li><a href="call-for-paper.html" class="text-decoration-none">Call for Paper</a></li>
+            <li><a href="publication-process.html" class="text-decoration-none">Publication Process</a></li>
+            <li><a href="submit-paper.html" class="text-decoration-none">Submit Paper Online</a></li>
+            <li><a href="fee.html" class="text-decoration-none">Pay Publication fee</a></li>
+            <li><a href="paper-formate.html" class="text-decoration-none">Paper Formate</a></li>
+            <li><a href="Track.html" class="text-decoration-none">Track Paper</a></li>
+            <li><a href="indexing.html" class="text-decoration-none">Indexing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Publication Box -->
+      <div class="card shadow-sm mb-3 boxes">
+        <div class="card-header text-white fw-bold custom-red">Publication</div>
+        <div class="card-body">
+          <ul class="list-unstyled">
+            <li><a href="current-issue.html" class="text-decoration-none">Current Issues</a></li>
+            <li><a href="past-issues.html" class="text-decoration-none">Past Issues</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Reviewers Box -->
+      <div class="card shadow-sm mb-3 boxes">
+        <div class="card-header text-white fw-bold custom-red">For Reviewers</div>
+        <div class="card-body">
+          <ul class="list-unstyled">
+            <li><a href="editor-board.html" class="text-decoration-none">Editorial Board</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER COLUMN (Now Wider: col-lg-9) -->
+    <div class="col-lg-9 mb-4 order-1 order-lg-2">
+      <!-- Welcome Box -->
+      <div class="card shadow mb-4">
+        <div class="card-body text-center">
+          <h3 class="fw-bold">WELCOME TO IJEMSS</h3>
+        </div>
+      </div>
+
+<form class="container my-5">
+  <!-- 📤 SUBMIT YOUR PAPER ONLINE -->
+  <div class="card p-4">
+    <h3 class="text-center fw-bold">Submit Your Paper Online</h3>
+
+    <!-- 📦 Box 1: Volume & Research Area -->
+    <div class="card p-3 mb-3">
+      <h4>Volume & Research Area</h4>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Research Area" required>
+        </div>
+        <div class="col-md-6">
+          <select class="form-select" required>
+            <option selected disabled>Select Country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <!-- ➕ Add more countries here -->
+          </select>
+        </div>
+        <div class="col-md-12">
+          <input type="text" class="form-control" placeholder="Paper Title" required>
+        </div>
+        <div class="col-md-12">
+          <textarea class="form-control" placeholder="Abstract / Introduction" rows="3" required></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- 👨‍🔬 Box 2: Authors -->
+    <div class="card p-3 mb-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h4>Author(s)</h4>
+        <button type="button" class="btn btn-sm btn-outline-primary" onclick="addAuthorFields()">Add Author</button>
+      </div>
+      <div id="authorFields">
+        <div class="row g-3 mt-2">
+          <div class="col-md-3"><input type="text" class="form-control" placeholder="Name" required></div>
+          <div class="col-md-3"><input type="email" class="form-control" placeholder="Email" required></div>
+          <div class="col-md-3"><input type="text" class="form-control" placeholder="Mobile" required></div>
+          <div class="col-md-3 d-flex align-items-center">
+            <input type="text" class="form-control me-2" placeholder="Institute" required>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📁 Box 3: Upload Location -->
+    <div class="card p-3 mb-3">
+      <h4>Location</h4>
+      <input type="file" class="form-control" required>
+    </div>
+
+    <!-- ✅ Box 4: Agreement and Submit -->
+    <div class="card p-3">
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="agreement" required>
+        <label class="form-check-label" for="agreement">
+          I agree to the terms of service and privacy policy
+        </label>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Submit</button>
+    </div>
+  </div>
+</form>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Logo Column -->
+
+
+      <!-- Text and Links Column -->
+     <div class="col-md-10 text-center text-md-start">
+        <p class="mb-1">&copy; 2025 IRJMETS. All rights reserved.</p>
+        <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+          <a href="terms-and-conditions.html" class="text-white text-decoration-none-white">Term And Conditions</a>
+          <span class="text-white">|</span>
+          <a href="privacy-policy.html" class="text-white text-decoration-none-white">Privacy Policy</a>
+          <span class="text-white">|</span>
+          <a href="ethics.html" class="text-white text-decoration-none-white">Publication-Ethics</a>
+          <span class="text-white">|</span>
+          <a href="peer-review-process.html" class="text-white text-decoration-none-white">Peer Review Process</a>
+          <span class="text-white">|</span>
+          <a href="contact.html" class="text-white text-decoration-none-white">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Submi000t-paper.js"></script>
+<script>
+    // ➕ JS FUNCTION TO ADD MORE AUTHOR FIELDS (UP TO 7 MAX)
+  let authorCount = 1;
+  function addAuthorFields() {
+    if (authorCount >= 7) return;
+    const container = document.getElementById('authorFields');
+    const wrapper = document.createElement('div');
+    wrapper.className = 'row g-3 mt-2 author-entry';
+    wrapper.innerHTML = `
+      <div class="col-md-3"><input type="text" class="form-control" placeholder="Name" required></div>
+      <div class="col-md-3"><input type="email" class="form-control" placeholder="Email" required></div>
+      <div class="col-md-3"><input type="text" class="form-control" placeholder="Mobile" required></div>
+      <div class="col-md-2"><input type="text" class="form-control" placeholder="Institute" required></div>
+      <div class="col-md-1 d-flex align-items-center">
+        <button type="button" class="btn btn-sm btn-danger" onclick="removeAuthor(this)">Delete</button>
+      </div>
+    `;
+    container.appendChild(wrapper);
+    authorCount++;
+  }
+
+  // ❌ JS FUNCTION TO REMOVE AUTHOR FIELD
+  function removeAuthor(button) {
+    const authorEntry = button.closest('.author-entry');
+    authorEntry.remove();
+    authorCount--;
+  }
+</script>
+</body>
+</html>
+
+
